@@ -8,9 +8,9 @@ import { IoSettingsSharp } from "react-icons/io5";
 
 const Header = () => {
   return (
-    <nav className="bg-black px-16 py-4 flex justify-between items-center">
+    <nav className="bg-black px-16 py-3 flex justify-between items-center relative z-20">
       <div className="logo">
-        <img src={Logo} alt="logo" className="w-36" />
+        <img src={Logo} alt="logo" className="w-24" />
       </div>
       <div className="search">
         <div className="search-container flex items-center">
@@ -35,7 +35,7 @@ const Header = () => {
           <label className="text-neutral-100 text-sm">Settings</label>
         </div>
         <div className="flex gap-x-2 items-center">
-          <img src={Profile} className="h-11 w-11" />
+          <img src={Profile} className="h-9 w-9" />
           <label className="text-neutral-100 text-sm font-medium">
             <span className="font-light">Hello,</span> Scopex
           </label>

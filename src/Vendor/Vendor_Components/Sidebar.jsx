@@ -1,5 +1,5 @@
 import React from "react";
-import { sideBar } from "./datas/datas";
+import { sideBar } from "../datas/datas";
 import { useLocation } from "react-router-dom";
 import { RxDividerVertical } from "react-icons/rx";
 
@@ -8,10 +8,10 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className="fixed top-0 left-0 right-0 h-screen w-20 -z-10 flex justify-center"
+        className="fixed top-0 left-0 right-0 h-screen w-20 z-10 flex justify-center"
         style={{ boxShadow: "4px 0 12px -2px #88888854" }}
       >
-        <div className="mt-24 flex gap-y-4 flex-col">
+        <div className="mt-32 flex gap-y-4 flex-col">
           {sideBar.map((item) => {
             const { id, img, name } = item;
             return (
@@ -27,7 +27,7 @@ const Sidebar = () => {
                   ""
                 )}
 
-                <a>
+                <a className="cursor-pointer">
                   <img src={img} alt="demo" className="h-7 w-7" />
                 </a>
               </div>
